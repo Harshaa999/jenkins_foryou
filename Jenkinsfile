@@ -49,7 +49,7 @@ pipeline {
             //     success {
             //         // Send email notification on successful deployment
             //         emailext (
-            //             to: 'shetyeketan18@gmail.com',
+            //             to: 'harshalovely3399@gmail.com',
             //             subject: 'Deployment Successful',
             //             body: 'The deployment was successful. Please verify.'
             //         )
