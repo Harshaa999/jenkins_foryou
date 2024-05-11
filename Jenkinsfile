@@ -45,16 +45,16 @@ pipeline {
                 echo "Production Stage"
             }
 
-            // post {
-            //     success {
-            //         // Send email notification on successful deployment
-            //         emailext (
-            //             to: 'harshalovely3399@gmail.com',
-            //             subject: 'Deployment Successful',
-            //             body: 'The deployment was successful. Please verify.'
-            //         )
-            //     }
-            // }
+             post {
+                success {
+                    // Send email notification on successful deployment
+                    emailext (
+                        to: 'harshalovely3399@gmail.com',
+                        subject: 'Deployment Successful',
+                        body: 'The deployment was successful. Please verify.'
+                    )
+                }
+            }
         }
     }
 }
